@@ -1,0 +1,27 @@
+# <<UNAME>>
+
+<<DESC>>
+### Installation
+Begin by installing this package through Composer. Edit your project's `composer.json` file to require `<<PKGPATH>>` and then install using `composer update` / `composer install`
+```
+"require": {
+    ...
+    "<<PKGPATH>>": "dev-master"
+}
+```
+
+You need to add following line at `config/app.php` in `providers` array:
+
+```
+'<<UCPKG>>\<<UNAME>>ServiceProvider',
+```
+
+Now add the alias.
+```
+'<<UNAME>>' => '<<UCPKG>>\Facades\<<UNAME>>',
+```
+
+For testing use default show method (Auto Generated) as Following
+```
+return <<UNAME>>::show();
+```

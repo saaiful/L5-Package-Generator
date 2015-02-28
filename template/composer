@@ -1,0 +1,23 @@
+{
+    "name": "<<PKGNAME>>",
+    "description": "<<PKGDESC>>",
+    "license": "<<LIC>>",
+    "keywords": <<KEY>>,
+    "authors": [
+        {
+            "name": "<<AUTHNAME>>",
+            "email": "<<AUTHEMAIL>>"
+        }
+    ],
+    "require": {
+        <<REQ>>
+    },
+    "require-dev": {
+        <<DEV>>
+    },
+    "autoload": {
+        "psr-4": {
+            "<<AL>>\\": "src/"
+        }
+    }
+}

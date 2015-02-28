@@ -1,0 +1,12 @@
+<?php namespace <<UCPKGPATH>>;
+use Controller;
+use View;
+use Model;
+
+class <<CLASS>>
+{
+	public function show()
+	{
+		return '<<CLASS>> Working..';
+	}
+}
