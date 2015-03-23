@@ -21,6 +21,11 @@ Now add the alias.
 '<<UNAME>>' => '<<UCPKG>>\Facades\<<UNAME>>',
 ```
 
+Publishing package view / model / any asset configured in package boot
+```
+php artisan vendor:publish
+```
+
 For testing use default show method (Auto Generated) as Following
 ```
 return <<UNAME>>::show();

@@ -30,8 +30,8 @@ function newPkg()
 	$pkg['description'] = cliInput("Package Description : ");
 	$pkg['keywords'] = cliInput("Package Keywords : ");
 	$pkg['license'] = cliInput("Package License : ");
-	$pkg['require'] = cliInput("Package Require : ");
-	$pkg['require-dev'] = cliInput("Package Require-dev : ");
+	// $pkg['require'] = cliInput("Package Require : ");
+	// $pkg['require-dev'] = cliInput("Package Require-dev : ");
 	// 
 	makeDir(__DIR__."/".$pkg['vendor']);
 	makeDir(__DIR__."/".$pkg['vendor']."/".$pkg['name']);
@@ -40,9 +40,10 @@ function newPkg()
 	makeDir(__DIR__."/".$pkg['vendor']."/".$pkg['name']."/tests");
 	makeDir(__DIR__."/".$pkg['vendor']."/".$pkg['name']."/src/config");
 	makeDir(__DIR__."/".$pkg['vendor']."/".$pkg['name']."/src/controllers");
-	makeDir(__DIR__."/".$pkg['vendor']."/".$pkg['name']."/src/lang");
+	makeDir(__DIR__."/".$pkg['vendor']."/".$pkg['name']."/src/translations");
 	makeDir(__DIR__."/".$pkg['vendor']."/".$pkg['name']."/src/migrations");
 	makeDir(__DIR__."/".$pkg['vendor']."/".$pkg['name']."/src/views");
+	makeDir(__DIR__."/".$pkg['vendor']."/".$pkg['name']."/src/models");
 	makeDir(__DIR__."/".$pkg['vendor']."/".$pkg['name']."/src/".ucfirst($pkg['vendor']));
 	makeDir(__DIR__."/".$pkg['vendor']."/".$pkg['name']."/src/".ucfirst($pkg['vendor'])."/".ucfirst($pkg['name']));
 	makeDir(__DIR__."/".$pkg['vendor']."/".$pkg['name']."/src/".ucfirst($pkg['vendor'])."/".ucfirst($pkg['name'])."/Facades");
@@ -119,7 +120,7 @@ switch ($command) {
 		break;
 	
 	default:
-		# code...
+		echo "Command not found!";
 		break;
 }
 ?>
